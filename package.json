@@ -1,0 +1,68 @@
+{
+  "name": "@4us-dev/crypto",
+  "version": "0.0.1",
+  "description": "Utility classes to assist developers during software development",
+  "author": "Clairton Luz <clairton.c.l@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/4us-dev/crypto#readme",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rimraf ./lib && tsc",
+    "docs": "typedoc --out docs --mode modules",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "lint": "eslint . --ext .ts",
+    "test": "jest --watchAll=false",
+    "coverage": "jest --coverage --coverageReporters=lcov --watchAll=false",
+    "prepare": "npm run build && npm test"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.4",
+    "@typescript-eslint/eslint-plugin": "^3.6.0",
+    "@typescript-eslint/parser": "^3.6.0",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jest": "^23.18.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.1",
+    "typedoc": "^0.17.8",
+    "typescript": "^3.9.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4us-dev/crypto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/4us-dev/crypto/issues"
+  },
+  "keywords": [
+    "crypto",
+    "hash",
+    "base64",
+    "base64url",
+    "sha1",
+    "sha256",
+    "md5",
+    "4us dev",
+    "4us",
+    "dev",
+    "developer",
+    "developers",
+    "browser",
+    "node",
+    "Node.JS",
+    "react",
+    "angular",
+    "typescript",
+    "javascript"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier-format && npm run lint"
+    }
+  }
+}
