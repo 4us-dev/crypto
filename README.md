@@ -36,6 +36,9 @@ npm i @4us-dev/crypto
   - [decode](#decode)
 - [sha256](#sha256)
   - [Defining output encode](#defining-output-encode)
+- [PKCE](#pkce)
+  - [codeVerifierGenerator](#codeverifiergenerator)
+  - [codeChallengeGenerator](#codechallengegenerator)
 
 ### Base64
 
@@ -101,4 +104,28 @@ sha256('4us dev');
 sha256('4us dev', 'base64');
 // output
 // nIgT8MqWZIDr0XZo94UMhZMOml4kJacdmxElyQJu3z0=
+```
+
+### PKCE
+
+Generate `code verifier` and `code challenge` for OAuth with PKCE.
+
+```js
+import { pkce } from '@4us-dev/crypto';
+```
+
+#### codeVerifierGenerator
+
+```js
+const codeVerifier = pkce.codeVerifierGenerator();
+// output example
+// FVMq~J2BfdXm2cEOEtlKQTGNRjYQ8VYA6OETFrW3A915~8dbktXkSwtVbZnUUStkApwZjcIWCYV.OiITpYNXpuWGBEM1.oFxT7ZizzoQ0OE81ZAOIU1JCwXMxmCQtyL2
+```
+
+#### codeChallengeGenerator
+
+```js
+pkce.codeChallengeGenerator(codeVerifier);
+// output example
+// Ae8fgMraIhwQDPladfacB-s6Oh4Hzs34SXLQmiyci98
 ```
