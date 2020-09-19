@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;base64Url/index&quot; | @4us-dev/crypto</title>
+	<title>&quot;pkce/codeVerifierGenerator&quot; | @4us-dev/crypto</title>
 	<meta name="description" content="Documentation for @4us-dev/crypto">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_base64url_index_.html">&quot;base64Url/index&quot;</a>
+					<a href="_pkce_codeverifiergenerator_.html">&quot;pkce/codeVerifierGenerator&quot;</a>
 				</li>
 			</ul>
-			<h1>Module &quot;base64Url/index&quot;</h1>
+			<h1>Module &quot;pkce/codeVerifierGenerator&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -71,38 +71,58 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>References</h3>
+							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="_base64url_index_.html#base64tobase64url" class="tsd-kind-icon">base64<wbr>ToBase64<wbr>Url</a></li>
-								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="_base64url_index_.html#base64urltobase64" class="tsd-kind-icon">base64<wbr>Url<wbr>ToBase64</a></li>
-								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="_base64url_index_.html#decode" class="tsd-kind-icon">decode</a></li>
-								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="_base64url_index_.html#encode" class="tsd-kind-icon">encode</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_pkce_codeverifiergenerator_.html#caracteresallowed" class="tsd-kind-icon">caracteres<wbr>Allowed</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_pkce_codeverifiergenerator_.html#maxlength" class="tsd-kind-icon">max<wbr>Length</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_pkce_codeverifiergenerator_.html#minlength" class="tsd-kind-icon">min<wbr>Length</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_pkce_codeverifiergenerator_.html#randomutils" class="tsd-kind-icon">random<wbr>Utils</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>References</h2>
-				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
-					<a name="base64tobase64url" class="tsd-anchor"></a>
-					<h3>base64<wbr>ToBase64<wbr>Url</h3>
-					Re-exports <a href="_base64url_encode_.html#base64tobase64url">base64ToBase64Url</a>
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="caracteresallowed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> caracteres<wbr>Allowed</h3>
+					<div class="tsd-signature tsd-kind-icon">caracteres<wbr>Allowed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~"</span><span class="tsd-signature-symbol"> = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/4us-dev/crypto/blob/5ed8e96/src/pkce/codeVerifierGenerator.ts#L6">pkce/codeVerifierGenerator.ts:6</a></li>
+						</ul>
+					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
-					<a name="base64urltobase64" class="tsd-anchor"></a>
-					<h3>base64<wbr>Url<wbr>ToBase64</h3>
-					Re-exports <a href="_base64url_decode_.html#base64urltobase64">base64UrlToBase64</a>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="maxlength" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> max<wbr>Length</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">128</span><span class="tsd-signature-symbol"> = 128</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/4us-dev/crypto/blob/5ed8e96/src/pkce/codeVerifierGenerator.ts#L5">pkce/codeVerifierGenerator.ts:5</a></li>
+						</ul>
+					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
-					<a name="decode" class="tsd-anchor"></a>
-					<h3>decode</h3>
-					Re-exports <a href="_base64url_decode_.html#decode">decode</a>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="minlength" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> min<wbr>Length</h3>
+					<div class="tsd-signature tsd-kind-icon">min<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">43</span><span class="tsd-signature-symbol"> = 43</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/4us-dev/crypto/blob/5ed8e96/src/pkce/codeVerifierGenerator.ts#L4">pkce/codeVerifierGenerator.ts:4</a></li>
+						</ul>
+					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
-					<a name="encode" class="tsd-anchor"></a>
-					<h3>encode</h3>
-					Re-exports <a href="_base64url_encode_.html#encode">encode</a>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="randomutils" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> random<wbr>Utils</h3>
+					<div class="tsd-signature tsd-kind-icon">random<wbr>Utils<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RandomUtils</span><span class="tsd-signature-symbol"> = new RandomUtils()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/4us-dev/crypto/blob/5ed8e96/src/pkce/codeVerifierGenerator.ts#L3">pkce/codeVerifierGenerator.ts:3</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -121,13 +141,13 @@
 					<li class=" tsd-kind-module">
 						<a href="_base64url_encode_.html">&quot;base64<wbr>Url/encode&quot;</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="_base64url_index_.html">&quot;base64<wbr>Url/index&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="_index_.html">&quot;index&quot;</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="_pkce_codeverifiergenerator_.html">&quot;pkce/code<wbr>Verifier<wbr>Generator&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -140,17 +160,17 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="_base64url_index_.html#base64tobase64url" class="tsd-kind-icon">base64<wbr>ToBase64<wbr>Url</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="_pkce_codeverifiergenerator_.html#caracteresallowed" class="tsd-kind-icon">caracteres<wbr>Allowed</a>
 					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="_base64url_index_.html#base64urltobase64" class="tsd-kind-icon">base64<wbr>Url<wbr>ToBase64</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_pkce_codeverifiergenerator_.html#maxlength" class="tsd-kind-icon">max<wbr>Length</a>
 					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="_base64url_index_.html#decode" class="tsd-kind-icon">decode</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_pkce_codeverifiergenerator_.html#minlength" class="tsd-kind-icon">min<wbr>Length</a>
 					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="_base64url_index_.html#encode" class="tsd-kind-icon">encode</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_pkce_codeverifiergenerator_.html#randomutils" class="tsd-kind-icon">random<wbr>Utils</a>
 					</li>
 				</ul>
 			</nav>
