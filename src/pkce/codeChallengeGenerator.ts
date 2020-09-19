@@ -1,4 +1,4 @@
-import { base64Url, sha256 } from '@4us-dev/crypto';
+import { base64Url, sha256 } from '../';
 
 /**
  * See https://tools.ietf.org/html/rfc7636#section-4.2 to more information

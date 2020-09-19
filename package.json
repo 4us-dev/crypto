@@ -64,5 +64,8 @@
     "hooks": {
       "pre-commit": "npm run prettier-format && npm run lint"
     }
+  },
+  "dependencies": {
+    "@4us-dev/utils": "0.0.5"
   }
 }
