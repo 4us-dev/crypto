@@ -35,7 +35,7 @@ npm i @4us-dev/crypto
   - [encode](#encode)
   - [decode](#decode)
 - [sha256](#sha256)
-  - [Defining output encode](#definingoutputencode)
+  - [Defining output encode](#defining-output-encode)
 
 ### Base64
 
