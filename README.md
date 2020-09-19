@@ -34,6 +34,8 @@ npm i @4us-dev/crypto
 - [Base64Url](#base64url)
   - [encode](#encode)
   - [decode](#decode)
+- [sha256](#sha256)
+  - [Defining output encode](#definingoutputencode)
 
 ### Base64
 
@@ -77,4 +79,26 @@ base64Url.encode('teste+encode+');
 base64Url.decode('dGVzdGUrZW5jb2RlKw');
 // output
 // teste+encode+
+```
+
+### sha256
+
+```js
+import { sha256 } from '@4us-dev/crypto';
+```
+
+default encoding is `hex`
+
+```js
+sha256('4us dev');
+// output
+// 9c8813f0ca966480ebd17668f7850c85930e9a5e2425a71d9b1125c9026edf3d
+```
+
+#### defining output encode
+
+```js
+sha256('4us dev', 'base64');
+// output
+// nIgT8MqWZIDr0XZo94UMhZMOml4kJacdmxElyQJu3z0=
 ```

@@ -8,3 +8,4 @@
 - base64Url
   - encode
   - decode
+- sha256
