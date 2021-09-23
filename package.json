@@ -14,23 +14,29 @@
     "lint": "eslint . --ext .ts",
     "test": "jest --watchAll=false",
     "coverage": "jest --coverage --coverageReporters=lcov --watchAll=false",
-    "prepare": "npm run build && npm test"
+    "prepare": "npm run build && npm test",
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable"
+  },
+  "dependencies": {
+    "@4us-dev/utils": "^0.0.13"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.4",
-    "@typescript-eslint/eslint-plugin": "^4.3.0",
-    "@typescript-eslint/parser": "^4.3.0",
-    "eslint": "^7.10.0",
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-jest": "^24.0.2",
-    "eslint-plugin-prettier": "^3.1.4",
-    "husky": "^4.2.5",
-    "jest": "^26.1.0",
-    "prettier": "^2.0.5",
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.4.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "jest": "^27.2.1",
+    "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
-    "ts-jest": "^26.4.1",
-    "typedoc": "^0.19.2",
-    "typescript": "^4.0.3"
+    "ts-jest": "^27.0.5",
+    "typedoc": "^0.22.4",
+    "typescript": "^4.4.3"
   },
   "repository": {
     "type": "git",
@@ -59,13 +65,5 @@
     "angular",
     "typescript",
     "javascript"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run prettier-format && npm run lint"
-    }
-  },
-  "dependencies": {
-    "@4us-dev/utils": "0.0.5"
-  }
+  ]
 }
