@@ -36,6 +36,7 @@ npm i @4us-dev/crypto
   - [decode](#decode)
 - [sha256](#sha256)
   - [Defining output encode](#defining-output-encode)
+- [sha256Async](#sha256Async)
 - [PKCE](#pkce)
   - [codeVerifierGenerator](#codeverifiergenerator)
   - [codeChallengeGenerator](#codechallengegenerator)
@@ -106,6 +107,23 @@ sha256('4us dev', 'base64');
 // nIgT8MqWZIDr0XZo94UMhZMOml4kJacdmxElyQJu3z0=
 ```
 
+### sha256Async
+
+```js
+import { sha256Async } from '@4us-dev/crypto';
+```
+
+```js
+const output = await sha256Async('4us dev');
+
+// or
+
+sha256Async('4us dev').then((output) => console.log(output));
+
+// output
+// 9c8813f0ca966480ebd17668f7850c85930e9a5e2425a71d9b1125c9026edf3d
+```
+
 ### PKCE
 
 Generate `code verifier` and `code challenge` for OAuth with PKCE.
@@ -125,7 +143,17 @@ const codeVerifier = pkce.codeVerifierGenerator();
 #### codeChallengeGenerator
 
 ```js
-pkce.codeChallengeGenerator(codeVerifier);
+// this works only with nodejs
+const output = pkce.codeChallengeGenerator(codeVerifier);
+// output example
+// Ae8fgMraIhwQDPladfacB-s6Oh4Hzs34SXLQmiyci98
+```
+
+#### codeChallengeGeneratorAsync
+
+```js
+// this works with browser and node
+const output = await pkce.codeChallengeGeneratorAsync(codeVerifier);
 // output example
 // Ae8fgMraIhwQDPladfacB-s6Oh4Hzs34SXLQmiyci98
 ```

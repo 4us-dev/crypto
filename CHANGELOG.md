@@ -1,3 +1,15 @@
+## [0.1.3](https://github.com/4us-dev/4us-utils/compare/v0.0.3...v0.1.0) (2021-09-24)
+
+## New Features
+
+### codeChallengeGeneratorAsync
+
+- compatibility with browser
+
+### sha256Async
+
+- create to work with browser and nodejs
+
 ## [0.0.3](https://github.com/4us-dev/4us-utils/compare/v0.0.1...v0.0.3) (2020-09-19)
 
 ## Bug fix
