@@ -1,6 +1,6 @@
 {
   "name": "@4us-dev/crypto",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Utility classes to assist developers during software development",
   "author": "Clairton Luz <clairton.c.l@gmail.com>",
   "license": "MIT",
