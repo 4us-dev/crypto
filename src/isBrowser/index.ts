@@ -1,5 +1,5 @@
 const isBrowser = (): boolean => {
-  return process.release.name !== 'node';
+  return process?.release?.name !== 'node';
 };
 
 export default isBrowser;

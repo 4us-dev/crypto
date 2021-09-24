@@ -1,20 +1,12 @@
+import { sha256 } from '../index';
 import isBrowser from '../isBrowser';
 
 const sha256Async = async (value: string): Promise<string> => {
   if (isBrowser()) {
     return await sha256Browser(value);
   } else {
-    return await sha256Node(value);
+    return sha256(value);
   }
-};
-
-const sha256Node = async (value: string): Promise<string> => {
-  const crypto = await import('crypto');
-  return crypto
-    .createHash('sha256')
-    .update(value, 'utf8')
-    .digest()
-    .toString('hex');
 };
 
 const sha256Browser = async (value: string): Promise<string> => {
